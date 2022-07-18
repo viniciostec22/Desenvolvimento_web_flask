@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*cor cabeçalho e rodape*/
+.bg-topo {
+  background-color: green; 
+}
+
+/*links de menu cabeçalho*/
+.cl-link {
+  color: white !important; 
+}
+
+
