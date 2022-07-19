@@ -5,57 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!--css do bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!--css personalizado-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <title>Homepage</title>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/7b42181f2a.js" crossorigin="anonymous"></script>
+    <!--ProgressBar-->
+    <script src="../js/progressbar.min.js"></script>
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+   
 </head>
 <body>
-    <div class="container-fluid bg-topo ">
-        <header class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="index.html" class="navbar-brand">
-              <img src="../img/dif_log.jpg" height="70" width="250"class="img-thumbnail" class="d-inline-block align-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu"aria-controls="menu" aria-expanded="false" aria-label="Menu colapso">
-              <span class="navbar-toggler-icon text-light"></span>
-            </button>
-            <div id="menu" class="collapse navbar-collapse">
-              <ul class="navbar-nav mr-auto text-light" id="barra-menu" >
-                  <li class="nav-item active">
-                      <a href="index.html"class="nav-link text-light font-weight-bold scroll-pag cl-link">Home</a>
-                  </li>
-                <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle font-weight-bold scrol-pag cl-link" href="#" id="menu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                A empresa
-                   </a>
-                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                     <a class="dropdown-item" href="quem-somos.html">Quem somos</a>
-                     <a class="dropdown-item" href="#">Missão,Visão e Valores</a>
-                     <div class="dropdown-divider"></div>
-                     <a class="dropdown-item" href="#">Sustentabilidade</a>
-                   </div>
-                </li>
-                <li class="nav-item">
-                  <a href="#parceiros"class="nav-link text-light font-weight-bold scroll-pag cl-link">Parceiros</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#cursos"class="nav-link text-light font-weight-bold scroll-pag cl-link">Noticias</a>
-                </li>
-                <li class="nav-item">
-                  <a href="fale-conosco.html"class="nav-link text-light font-weight-bold cl-link">Fale com Nosco</a>
-                </li>
-              </ul>
-              
-              </div>
-          </nav>
-        </header>
+    <header>
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <a href="#" class="navbar-brand">
+            <img id="logo" src="../img/dif_log.jpg" alt="logo"> DIF
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
+            aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            <div class="navbar-nav">
+              <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+              <a href="#" class="nav-item nav-link" id="about-menu">Sobre</a>
+              <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
+              <a href="#" class="nav-item nav-link" id="contact-menu">Contatos</a>
+            </div>
+          </div>
+        </nav>
       </div>
-
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#mainSlider" data-slide-to="1"></li>
+            <li data-target="#mainSlider" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/cede1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>First slide label</h2>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/02.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Second slide label</h2>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../img/cede2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Third slide label</h2>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#mainSlider" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#mainSlider" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+    </main>
     
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+     
 </body>
 </html>
