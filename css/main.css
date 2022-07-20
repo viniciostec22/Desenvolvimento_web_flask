@@ -132,7 +132,21 @@ header, .navbar{
   color: #65daf9;
   margin-right: 15px;
 }
+/*Dados */
+.circle-box{
+  padding: 0 40px;
+}
 
+.progresbar-text{
+  font-weight: bold;
+  font-size: 32px;
+}
+#data-area p{
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 20px;
+}
 /*serviços*/
 #service-area{
   background-color: #f9f9f9;
@@ -154,4 +168,59 @@ header, .navbar{
 #service-img:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+/*noticias */
+card-body{
+  text-align: center;
+}
+
+/*cotação da banana*/
+
+#apply-area{
+  height: 500px;
+}
+
+#apply-area .container-fluid, #apply-area .row{
+  height: 100%;
+}
+
+#apply-area .apply-box{
+  text-align: center;
+  padding: 70px 50px;
+}
+
+#company-img{
+  background-image: url('../img/cotação.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+#pattern-img h4, #pattern-img p{
+  color: #fff;
+}
+#pattern-img h4{
+  margin-top: 8%;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#pattern-img p{
+  margin-bottom: 20px;
+}
+
+#apply-btn{
+  display: block;
+  height: auto;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+#apply-btn:hover{
+  border-color: #65daf9;
+  background-color: #65daf9;
 }
