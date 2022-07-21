@@ -30,7 +30,7 @@
     <header>
       <div class="container" id="nav-container">
         <nav class="navbar navbar-expand-lg fixed-top">
-          <a href="#" class="navbar-brand">
+          <a href="#mainSlider" class="navbar-brand">
             <img id="logo" src="../img/DIF-LOGOMARCA-BLACK.png" alt="logo"> 
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
@@ -39,10 +39,11 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
             <div class="navbar-nav">
-              <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
-              <a href="#" class="nav-item nav-link" id="about-menu">Sobre</a>
-              <a href="#" class="nav-item nav-link" id="services-menu">Serviços</a>
-              <a href="#" class="nav-item nav-link" id="contact-menu">Contatos</a>
+              <a href="#mainSlider" class="nav-item nav-link" id="home-menu">Home</a>
+              <a href="#about-area" class="nav-item nav-link" id="about-menu">Sobre</a>
+              <a href="#service-area" class="nav-item nav-link" id="services-menu">Serviços</a>
+              <a href="#contact-area" class="nav-item nav-link" id="contact-menu">Contatos</a>
+              <a href="#" class="nav-item nav-link" id="contact-menu">Aréa do Cliente</a>
             </div>
           </div>
         </nav>
@@ -114,6 +115,8 @@
             </div>
           </div>
         </div>
+        <!--parallax-->
+       
         <!--Serviços-->
         <div id="service-area">
           <div class="container">
@@ -199,9 +202,84 @@
             </div>
           </div>
         </div>
+        <!--Newsletter-->
+        <div id="news-area">
+          <div class="container">
+            <div class="col-md-12">
+              <h3 class="main-title">Fique por dentro das novidades</h3>
+            </div>
+            <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre desenvolvimento de software</p>
+            <form action="">
+              <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+              <input type="submit" id="news-btn" value="Inscrever">
+            </form>
+          </div>
+        </div>
+        <!--Call to action-->
+        <div id="endereco">
+          <div class="container">
+            <div class="row">
+              <p>Nossa Localização  <i class="fas fa-map-marker-alt"></i></p>
+             <!--<button class="main-btn" id="call-btn">###</button>-->
+            </div>
+          </div>
+        </div>
+        <div class="mapa">
+          <div class="container">
+            <div class="col-md-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124279.06679180985!2d-43.792898654937765!3d-13.242827931792919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x75c07c6bc71ef2b%3A0x210e757c3e9a58ad!2sDistrito%20de%20Irriga%C3%A7%C3%A3o%20Formoso!5e0!3m2!1spt-BR!2sus!4v1658425302346!5m2!1spt-BR!2sus"
+               width="1140" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
+    <!--rodape-->
+    <footer>
+      <div id="contact-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-title">Ligue para:</span> (77)99999-9999</p>
+              <p><span class="contact-title">Horarios:</span>7:20 as 12:00 das 13:00 as 17:00 </p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-title">Envie um e-mail:</span> contato@distritoformoso.com.br</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <a href="https://goo.gl/maps/J4tAsF4W7uVv4xFW6"><i class="fas fa-map-marker-alt"></i></a>
+              <p><span class="contact-title">Venha nos conhecer:</span> BR 349 km 799, vila setor 33</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Ou nos deixe uma mensagem</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="email" class="form-control" placeholder="email" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea name="message" id="" cols="30" rows="5" class="form-control" placeholder="Sua mensagem"></textarea>
+                <input type="submit" class="main-btn" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="copy-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="#">vinicios</a>&copy; 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     
-     
+    <Script src="../js/scripts.js"></Script>
 </body>
 </html>
