@@ -5,16 +5,16 @@ $( document ).ready(function() {
 
   let circleA = new ProgressBar.Circle(containerA, {
 
-    color: '#65DAF9',
+    color: '#fff',
     strokeWidth: 8,
     duration: 1400,
     from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
+    to: { color: '#fff'},
 
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 60);
+      var value = Math.round(circle.value() * 1000);
       circle.setText(value);
 
     }
@@ -25,16 +25,16 @@ $( document ).ready(function() {
 
   let circleB = new ProgressBar.Circle(containerB, {
 
-    color: '#65DAF9',
+    color: '#fff',
     strokeWidth: 8,
     duration: 1600,
     from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
+    to: { color: '#fff'},
 
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 254);
+      var value = Math.round(circle.value() * 300);
       circle.setText(value);
 
     }
@@ -45,16 +45,16 @@ $( document ).ready(function() {
 
   let circleC = new ProgressBar.Circle(containerC, {
 
-    color: '#65DAF9',
+    color: '#fff',
     strokeWidth: 8,
     duration: 1800,
     from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
+    to: { color: '#fff'},
 
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 32);
+      var value = Math.round(circle.value() * 1500);
       circle.setText(value);
 
     }
@@ -65,16 +65,16 @@ $( document ).ready(function() {
 
   let circleD = new ProgressBar.Circle(containerD, {
 
-    color: '#65DAF9',
+    color: '#fff',
     strokeWidth: 8,
     duration: 2000,
     from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
+    to: { color: '#fff'},
 
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 5423);
+      var value = Math.round(circle.value() * 600);
       circle.setText(value);
 
     }
@@ -105,7 +105,7 @@ $( document ).ready(function() {
 
   // setTimeout serve para carregar primeiro as imagens
   setTimeout(function() {
-    $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'});
+    $('#data-area').parallax({imageSrc: '../img/02.jpg'});
     $('#apply-area').parallax({imageSrc: '../img/pattern.png'});
   }, 200);
 
