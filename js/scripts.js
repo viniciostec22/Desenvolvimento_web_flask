@@ -105,8 +105,8 @@ $( document ).ready(function() {
 
   // setTimeout serve para carregar primeiro as imagens
   setTimeout(function() {
-    $('#data-area').parallax({imageSrc: '../img/02.jpg'});
-    $('#apply-area').parallax({imageSrc: '../img/pattern.png'});
+    $('#data-area').parallax({imageSrc: './img/02.jpg'});
+    $('#apply-area').parallax({imageSrc: './img/pattern.png'});
   }, 200);
 
   // Filtro portfólio
@@ -152,8 +152,8 @@ $( document ).ready(function() {
 
   let bannerSection = $('#mainSlider');
   let aboutSection = $('#about-area');
-  let servicesSection = $('#services-area');
-  let teamSection = $('#team-area');
+  let servicesSection = $('#service-area');
+  let teamSection = $('#news');
   let portfolioSection = $('#portfolio-area');
   let contactSection = $('#contact-area');
 
@@ -167,7 +167,7 @@ $( document ).ready(function() {
       scrollTo = aboutSection;
     } else if(btnId == 'services-menu') {
       scrollTo = servicesSection;
-    } else if(btnId == 'team-menu') {
+    } else if(btnId == 'news-menu') {
       scrollTo = teamSection;
     } else if(btnId == 'portfolio-menu') {
       scrollTo = portfolioSection;

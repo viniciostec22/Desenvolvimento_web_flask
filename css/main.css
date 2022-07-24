@@ -20,7 +20,9 @@ p, li{
 header, .navbar{
   background-color:#008000;
 }
-
+header, .navnav-item{
+  font-size: 16px;  
+}
 #nav-container{
   padding-top: 0;
   padding-bottom: 0;
@@ -201,21 +203,25 @@ header, .navbar{
   background-size: cover;
   height: 100%;
 }
+/*
 #pattern-img{
   background-image: url('./img/pattern.png');
 }
+*/
 
 #pattern-img h4, #pattern-img p{
   color: #fff;
 }
 #pattern-img h4{
   margin-top: 8%;
+  font-size: 30px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 #pattern-img p{
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 #apply-btn{
@@ -353,7 +359,7 @@ header, .navbar{
   font-size: 22px;
 }
 
-#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea{
+#contact-form input[type="text"], #contact-form input[type="email"],#contact-form textarea{
   margin-bottom: 15px;
   border-radius: 0;
 }
