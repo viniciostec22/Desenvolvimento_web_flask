@@ -27,18 +27,14 @@ ini_set('display_startup_errors', 1);
   $assunto = "Contato pelo Site";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
-  $headers  = "MIME-Version: 1.0 \n";
-  $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
-  $headers .= "From: $nome <$email">;
-
-  //Enviar
-  if(mail($destino, $assunto, $arquivo, $headers)){
-    echo "email enviado com sucesso";
-  }else{
-    echo"falha no envio";
-  }
-  //mail($destino, $assunto, $arquivo, $headers);
+  $headers  = "MIME-Version: 1.0\n";
+  $headers .= "Content-type: text/html; charset=iso-8859-1\n";
+  $headers .= "From: $nome $assunto <$email>";
   
-  //echo "<meta http-equiv='refresh' content='10;URL=../index.html'>";
+  ini_set('smtp_port', 25);
+  //Enviar
+  mail($destino, $assunto, $arquivo, $headers);
+  
+  //echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
   
 ?>
