@@ -183,8 +183,25 @@ header, .navnav-item{
   text-align: center;
 }
 
+
 #news .col-md-3 .card{
   height: 50vh;
+}
+
+.news-right .card{
+  margin-bottom: 7px;
+}
+
+.news-right .card .row .col-md-4{
+  margin-left: 0;
+}
+#news .col-md-12{
+ text-align: center;
+ margin-top: 70px;
+}
+
+#news .col-md-12 .main-btn:hover{
+ color: #008000
 }
 
 /*cotação da banana*/
@@ -377,6 +394,35 @@ header, .navnav-item{
   color: #008000;
 }
 
+/*social*/
+#social{
+  text-align: center;
+  background-color: #F9F9F9;
+}
+#social .row i{
+  font-size: 26px;
+  letter-spacing: 15px;
+}
+
+#links-area {
+  background-color: #008000;
+ 
+}
+#links-area h4{
+  color: #FFF;
+}
+#links-area a{
+  color: #FFF;
+}
+
+#links-area p{
+  color: #FFF;
+}
+
+#links-area i{
+  color: #FFF;
+}
+
 /*copy*/
 
 #copy-area{
@@ -525,6 +571,20 @@ header, .navnav-item{
   #news .col-md-3{
     width: 50%;
     margin-bottom: 30px;
+  }
+
+  #news .col-md-5{
+    margin-bottom: 7px;
+  }
+
+  .news-right .card-body-right{
+    text-align: center;
+    padding: 1.25rem;
+
+  }
+
+  .news-right img{
+   
   }
 
   /*cotação da banana*/
