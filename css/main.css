@@ -395,6 +395,9 @@ header, .navnav-item{
 }
 
 /*social*/
+#social .container{
+  padding: 10px 0;
+}
 #social{
   text-align: center;
   background-color: #F9F9F9;
@@ -408,8 +411,13 @@ header, .navnav-item{
   background-color: #008000;
  
 }
-#links-area h4{
+#links-area .container h4{
   color: #FFF;
+  
+}
+
+#links-area .container{
+  padding: 10PX 0;
 }
 #links-area a{
   color: #FFF;
@@ -421,7 +429,9 @@ header, .navnav-item{
 
 #links-area i{
   color: #FFF;
+  font-size: 20px;
 }
+
 
 /*copy*/
 
@@ -436,11 +446,12 @@ header, .navnav-item{
 
 #copy-area .container p{
   margin-bottom: 0;
+  
 }
 
 #copy-area .container a{
   font-weight: bold;
-  color: #444;
+  
 }
 
 #copy-area .container a:hover{
