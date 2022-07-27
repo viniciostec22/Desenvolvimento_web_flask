@@ -8,6 +8,9 @@ include_once("conexao.php");
 $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 var_dump($dados);
 
+//$query_newslatters = "SELECT * FROM newslatters WHERE email = '". $dados['email'] ."'";
+//if()
+
 $query_newslatters = "INSERT INTO newslatters (email) VALUES ('". $dados['email'] ."')";
 
 $cad_newslatter = $conn->prepare($query_newslatters);
